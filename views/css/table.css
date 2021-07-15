@@ -1,4 +1,8 @@
-tr {
+form {
+    max-width: 80vw;
+}
+
+form, tr {
   display: flex;
   flex-direction: column;
 }
@@ -19,4 +23,8 @@ th {
 
 select {
   width: fit-content;
+}
+
+button {
+    margin: auto;
 }
