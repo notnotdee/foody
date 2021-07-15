@@ -1,0 +1,33 @@
+extends _layout.pug
+
+block styles 
+    include css/table.css
+
+block content 
+    - var categories= ['dry goods', 'produce', 'grains', 'proteins', 'oils', 'dairy and eggs', 'snacks']
+    - var units= ['ea', 'oz', 'g', 'kg', 'L', 'mL', 'cup', 'tbsp', 'tsp']
+
+    form 
+        table
+            tr
+                th Name
+                    input.name 
+                th Category
+                    select(type='dropdown' id='')
+                        each category in categories 
+                            option= category
+                th Brand 
+                    input.brand
+                th Quantity
+                    div.quantity 
+                        input.qinput(type='number')
+                        select(type='dropdown' id='')
+                            each unit in units 
+                                option= unit
+                th Price 
+                    input.price(type='number')
+                th Purchased From 
+                    input.store
+                th Expiry
+                    input.expiry(type='date')
+        button(type='submit') Submit

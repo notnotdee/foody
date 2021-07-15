@@ -4,4 +4,8 @@ block styles
     include css/main.css
 
 block content 
-    div Main
+    ul.inventory 
+        each ingredient in ingredients 
+            li.name= ingredient.name 
+                .quantity= ingredient.quantity 
+                .expiry= ingredient.expiry

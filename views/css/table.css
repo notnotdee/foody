@@ -1,0 +1,22 @@
+tr {
+  display: flex;
+  flex-direction: column;
+}
+
+th {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.quantity {
+  display: flex;
+  flex-direction: row;
+}
+
+.qinput {
+  width: 62px;
+}
+
+select {
+  width: fit-content;
+}
