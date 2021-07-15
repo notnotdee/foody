@@ -2,7 +2,6 @@ INSERT INTO ingredients (name, category)
 VALUES ('spinach', 'produce')
 RETURNING *;
 
-
 -- default expiry = today + 7 days
 INSERT INTO current_stock (ingredient_id, brand, quantity, unit, purchased_from, price)
 VALUES (1, 'Earthbound Farm', 12, 'oz', 'WinCo', 3.49)
